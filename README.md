@@ -43,7 +43,6 @@ Check the lab members' Google Scholar profiles for title, authors, journal and y
 | Ammar Al-Chalabi | https://scholar.google.co.uk/citations?user=mEMAWwwAAAAJ |
 | Ahmad Al Khleifat | https://scholar.google.com/citations?user=eXDCaSQAAAAJ |
 | Renato Santos | https://scholar.google.com/citations?user=TNnrFaMAAAAJ |
-| Yusuf Abdulle | https://scholar.google.com/citations?user=lfsAtvgAAAAJ |
 
 Use the publisher link (DOI or journal page) for the `href`, not the Google Scholar URL.
 
