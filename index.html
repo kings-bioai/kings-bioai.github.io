@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAMBAL — Computational research on motor neuron disease</title>
+<meta name="description" content="MAMBAL is a research group at King's College London building machine-learning and multi-omics methods to map the molecular basis of ALS.">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="index.html">MAMBAL</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"><span class="mi">01</span>Home</a>
+  <a href="research.html"><span class="mi">02</span>Research</a>
+  <a href="publications.html"><span class="mi">03</span>Publications</a>
+  <a href="team.html"><span class="mi">04</span>Team</a>
+  <a href="join.html"><span class="mi">05</span>Join Us</a>
+</div>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero wrap">
+    <div class="hero-meta reveal">
+      <span>MAMBAL — Machine Learning &amp; Multiomics Bioinformatics</span>
+      <span>King's College London</span>
+      <span>51.468°N&nbsp;&nbsp;0.094°W</span>
+    </div>
+    <h1 class="reveal" data-d="1">Decoding the genetics of <em>ALS</em>, through computation.</h1>
+    <div class="hero-foot">
+      <p class="lede reveal" data-d="2">We build machine-learning and multi-omics methods to map the molecular basis of amyotrophic lateral sclerosis and motor neuron degeneration.</p>
+      <div class="reveal" data-d="3">
+        <a class="link" href="research.html">View research <span class="arrow">→</span></a>
+        <p style="font-family:var(--mono);font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-top:1.6rem;">Principal Investigator<br>Prof. Alfredo Iacoangeli</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH THEMES ================= -->
+  <section class="wrap" id="research" aria-labelledby="research-h">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow"><span class="idx">↳</span>&nbsp;Research</span>
+        <h2 id="research-h" style="margin-top:1.4rem;">Three questions,<br><em>one approach.</em></h2>
+      </div>
+      <p class="lede reveal" data-d="1">Computation is our microscope. We treat the genome, the transcriptome, and the clinic as one connected dataset — and read across them.</p>
+    </div>
+
+    <article class="theme reveal">
+      <div class="theme-text">
+        <span class="theme-num">01 — Statistical genetics</span>
+        <h3>The genetics of risk and resilience.</h3>
+        <p>Genome-wide association, rare-variant analysis and polygenic scoring across familial and sporadic ALS — including the oligogenic architecture now reshaping how risk is understood and tested.</p>
+        <div class="theme-tags"><span>GWAS</span><span>Rare variants</span><span>Polygenic scores</span><span>Oligogenic models</span></div>
+        <a class="link" href="research.html">Explore <span class="arrow">→</span></a>
+      </div>
+      <figure class="theme-figure">
+        <img src="img/fig-manhattan.svg" alt="Manhattan plot showing genome-wide association peaks">
+        <figcaption class="fig-cap">Fig. 01 — Association signal across the genome</figcaption>
+      </figure>
+    </article>
+
+    <article class="theme flip reveal">
+      <div class="theme-text">
+        <span class="theme-num">02 — Machine learning</span>
+        <h3>Models that anticipate the disease.</h3>
+        <p>Statistical and deep-learning models for stratifying patients, predicting progression, and surfacing biomarkers from multi-modal clinical and genetic data — built to be interpretable, not just accurate.</p>
+        <div class="theme-tags"><span>Progression prediction</span><span>Stratification</span><span>Biomarkers</span><span>Interpretability</span></div>
+        <a class="link" href="research.html">Explore <span class="arrow">→</span></a>
+      </div>
+      <figure class="theme-figure">
+        <img src="img/fig-embedding.svg" alt="Two-dimensional embedding showing patient subtype clusters">
+        <figcaption class="fig-cap">Fig. 02 — Patient subtypes in latent space</figcaption>
+      </figure>
+    </article>
+
+    <article class="theme reveal">
+      <div class="theme-text">
+        <span class="theme-num">03 — Multi-omics integration</span>
+        <h3>Many layers, one biology.</h3>
+        <p>Pipelines that harmonise genomic, transcriptomic, proteomic and clinical data so that signals invisible in any single layer become legible when the layers are read together.</p>
+        <div class="theme-tags"><span>Data integration</span><span>Single-cell</span><span>Networks</span><span>Pipelines</span></div>
+        <a class="link" href="research.html">Explore <span class="arrow">→</span></a>
+      </div>
+      <figure class="theme-figure">
+        <img src="img/fig-omics.svg" alt="Stacked tracks representing integrated multi-omics layers">
+        <figcaption class="fig-cap">Fig. 03 — Aligned multi-omics tracks</figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <!-- ================= FEATURED PUBLICATION ================= -->
+  <section class="wrap" aria-labelledby="pub-h">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow"><span class="idx">↳</span>&nbsp;Recent work</span>
+        <h2 id="pub-h" style="margin-top:1.4rem;">Featured<br><em>publication.</em></h2>
+      </div>
+      <p class="lede reveal" data-d="1">A finding with direct consequences for how ALS is tested, counselled and treated.</p>
+    </div>
+
+    <a class="featured reveal" href="https://jnnp.bmj.com/content/96/10/928.abstract">
+      <span class="eyebrow"><span class="idx">★</span>&nbsp;Featured</span>
+      <h3>Oligogenic structure of amyotrophic lateral sclerosis has genetic testing, counselling and therapeutic implications.</h3>
+      <span class="meta">J. Neurol. Neurosurg. Psychiatry (BMJ) · 2025</span>
+      <span class="link on-dark" style="justify-self:start;margin-top:0.5rem;">Read the paper <span class="arrow">→</span></span>
+    </a>
+
+    <div style="margin-top:clamp(2rem,4vw,3rem);" class="reveal">
+      <a class="link" href="publications.html">All publications <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ================= STATEMENT ================= -->
+  <section class="statement wrap">
+    <blockquote class="reveal">Every motor neuron that fails leaves a signature in the data. Our work is to <em>read it.</em></blockquote>
+    <p class="src reveal" data-d="1">— The MAMBAL group, King's College London</p>
+  </section>
+
+  <!-- ================= PEOPLE ================= -->
+  <section class="wrap" id="people" aria-labelledby="people-h">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow"><span class="idx">↳</span>&nbsp;People</span>
+        <h2 id="people-h" style="margin-top:1.4rem;">The group.</h2>
+      </div>
+      <p class="lede reveal" data-d="1">An interdisciplinary team spanning computational biology, statistical genetics, machine learning and clinical neuroscience.</p>
+    </div>
+
+    <div class="people-grid">
+      <div class="person reveal"><div class="portrait" style="--accent:var(--forest)"><span class="initials">AI</span></div><h4>Alfredo Iacoangeli</h4><p class="role">Principal Investigator</p></div>
+      <div class="person reveal" data-d="1"><div class="portrait" style="--accent:var(--burgundy)"><span class="initials">AC</span></div><h4>Ammar Al-Chalabi</h4><p class="role">Professor of Neurology</p></div>
+      <div class="person reveal" data-d="2"><div class="portrait" style="--accent:var(--ink)"><span class="initials">AK</span></div><h4>Ahmad Al Khleifat</h4><p class="role">Senior Research Fellow</p></div>
+      <div class="person reveal" data-d="3"><div class="portrait" style="--accent:var(--forest)"><span class="initials">EG</span></div><h4>Esteban Gomez Cifuentes</h4><p class="role">ML for Genomics</p></div>
+      <div class="person reveal"><div class="portrait" style="--accent:var(--ink)"><span class="initials">ST</span></div><h4>Simon Topp</h4><p class="role">Senior Bioinformatician</p></div>
+      <div class="person reveal" data-d="1"><div class="portrait" style="--accent:var(--burgundy)"><span class="initials">AA</span></div><h4>Aminah Ali</h4><p class="role">Bioinformatics</p></div>
+      <div class="person reveal" data-d="2"><div class="portrait" style="--accent:var(--forest)"><span class="initials">RS</span></div><h4>Renato Santos</h4><p class="role">PhD Researcher</p></div>
+      <div class="person reveal" data-d="3"><div class="portrait" style="--accent:var(--ink)"><span class="initials">NS</span></div><h4>Nogayhan Seymen</h4><p class="role">Bioinformatician</p></div>
+    </div>
+    <div style="margin-top:clamp(2.2rem,4vw,3rem);" class="reveal">
+      <a class="link" href="team.html">Meet the full team <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ================= LATEST / NOTES ================= -->
+  <section class="wrap" aria-labelledby="notes-h">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="eyebrow"><span class="idx">↳</span>&nbsp;Latest</span>
+        <h2 id="notes-h" style="margin-top:1.4rem;">From the lab.</h2>
+      </div>
+    </div>
+    <div class="notes reveal">
+      <div class="note"><span class="when">2025</span><p><span class="tag">Publication</span>Our work on the oligogenic structure of ALS appears in the BMJ <em>Journal of Neurology, Neurosurgery &amp; Psychiatry</em>.</p></div>
+      <div class="note"><span class="when">Ongoing</span><p><span class="tag">Recruiting</span>PhD and postdoctoral positions are open in computational genomics and machine learning for biomedicine.</p></div>
+      <div class="note"><span class="when">Ongoing</span><p><span class="tag">Collaboration</span>Active partnerships with Project MinE, Answer ALS and the UK MND research community.</p></div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= RECRUITMENT BAND ================= -->
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow" style="color:rgba(250,248,244,0.6)">Join us</span>
+    <h2 class="reveal" style="margin-top:1.4rem;">Bring your method <em>to the question.</em></h2>
+    <p class="reveal" data-d="1">We welcome students, postdocs and collaborators who want to apply computation to one of neurology's hardest problems.</p>
+    <div class="band-foot reveal" data-d="2"><a class="link on-dark" href="join.html">See open positions <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-mark">MAMBAL</div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="join.html">Join Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:alfredo.iacoangeli@kcl.ac.uk">alfredo.iacoangeli@kcl.ac.uk</a>
+        <p>SGDP Centre, IoPPN<br>16 De Crespigny Park<br>London SE5 8AF, UK</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Machine Learning &amp; Multiomics Bioinformatics for ALS</span>
+      <span>© 2025 MAMBAL · King's College London</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/theme.js"></script>
+</body>
+</html>
