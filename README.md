@@ -15,7 +15,9 @@ team.html           Team directory
 join.html           Open positions and contact
 css/styles.css      Stylesheet (design tokens and components)
 js/theme.js         Scroll reveals, nav state, mobile menu
-img/                Abstract research figures (SVG)
+js/team.js          Team member research profiles (modal content)
+img/                Photos and abstract research figures
+img/social/         Lab social / event photos (team page gallery)
 ```
 
 ## Contributing
@@ -91,6 +93,53 @@ If you add a new HTML page, copy the `<header>`, `<div class="mobile-menu">`, an
 
 ## Editing the team
 
-Team members are `.person` blocks in `team.html`, grouped by section. Each uses an initials monogram; replace `<span class="initials">` with an `<img>` if you add photos. Open a pull request for any changes (see [Contributing](#contributing)).
+Team content is split across two files. Open a pull request for any changes (see [Contributing](#contributing)).
+
+### Research profiles (click-to-view bios)
+
+When someone clicks a team member on `team.html`, the popup text comes from **`js/team.js`**.
+
+Each person is an entry in the `members` object. Edit the `research` field for their area of work:
+
+```js
+renato: {
+  name: "Renato Santos",
+  role: "PhD Researcher",
+  image: "img/renato.jpeg",   // optional — omit if no photo
+  initials: "RS",               // optional — shown when no image
+  research: "One or two sentences on their research area."
+},
+```
+
+- **`name`** and **`role`** — shown in the modal header
+- **`research`** — the main bio text (this is what you are usually editing)
+- **`image`** — path under `img/` if they have a portrait
+- **`initials`** — two letters if there is no photo
+
+The `data-person` value on each card in `team.html` must match the key in `members` (e.g. `data-person="renato"`).
+
+### Photos and layout (`team.html`)
+
+- **Portraits** — `<img src="img/...">` inside each `.person` card; use initials (`<span class="initials">`) when no photo exists
+- **New members** — copy an existing `<button class="person person-btn" ...>` block, set `data-person` to a new key, and add the matching entry in `js/team.js`
+- **Alfredo (PI)** — longer intro stays in the HTML bio; the modal uses the `alfredo` entry in `js/team.js`
+- **Lab gallery** — “Life in the lab” at the bottom of `team.html`; add images to `img/social/` and replace the placeholder `<figure class="photo-card">` blocks
+
+### Home page preview
+
+The smaller people grid on `index.html` is edited separately (names, roles, photos only — no modal).
+
+## Adding lab gallery photos
+
+At the bottom of `team.html`, replace a placeholder figure with:
+
+```html
+<figure class="photo-card reveal">
+  <img src="img/social/your-photo.jpg" alt="Short description">
+  <figcaption>Lab social, 2025</figcaption>
+</figure>
+```
+
+Store images in **`img/social/`**.
 
 © 2025 MAMBAL · King's College London
