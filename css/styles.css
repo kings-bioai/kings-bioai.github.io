@@ -153,7 +153,7 @@ a:focus-visible, button:focus-visible {
 }
 .nav-links { display: flex; gap: clamp(1.4rem, 3vw, 2.8rem); }
 .nav-links a {
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   letter-spacing: 0.02em;
   color: var(--ink-soft);
   position: relative;
@@ -209,6 +209,10 @@ a:focus-visible, button:focus-visible {
   color: var(--ink-faint); text-transform: uppercase;
   border-bottom: 1px solid var(--line);
   padding-bottom: 1.4rem; margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+.acronym-expansion strong {
+  font-weight: 600;
+  color: var(--ink);
 }
 .hero h1 {
   font-family: var(--serif);
@@ -367,6 +371,13 @@ section { padding-block: var(--section-y); }
   display: grid; place-items: center;
   transition: transform 0.6s var(--ease);
 }
+.portrait img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  transition: transform 0.6s var(--ease);
+}
+.person:hover .portrait img { transform: scale(1.04); }
 .person:hover .portrait { transform: translateY(-4px); }
 .portrait .initials {
   font-family: var(--serif); font-size: clamp(2.5rem, 6vw, 4rem);
@@ -381,8 +392,8 @@ section { padding-block: var(--section-y); }
   transition: opacity 0.5s var(--ease);
 }
 .person:hover .portrait::after { opacity: 0.10; }
-.person h4 { font-family: var(--serif); font-size: 1.4rem; line-height: 1.1; letter-spacing: -0.005em; }
-.person .role { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-faint); margin-top: 0.45rem; }
+.person h4 { font-family: var(--serif); font-size: 1.75rem; line-height: 1.1; letter-spacing: -0.005em; }
+.person .role { font-family: var(--mono); font-size: 0.85rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-faint); margin-top: 0.45rem; }
 
 /* PI feature row */
 .pi {
@@ -471,6 +482,7 @@ section { padding-block: var(--section-y); }
 .collab h4 { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--forest); padding-bottom: 1.1rem; border-bottom: 1px solid var(--line); margin-bottom: 1.1rem; }
 .collab li { padding: 0.55rem 0; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
 .collab li:last-child { border-bottom: 0; }
+.collab--single ul { border-top: 1px solid var(--line); max-width: 36ch; }
 
 /* ============================================================
    Team page groups
@@ -525,6 +537,7 @@ section { padding-block: var(--section-y); }
   border-top: 1px solid var(--line); padding-top: 1.6rem;
   font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--ink-faint); text-transform: uppercase;
 }
+.footer-bottom .acronym-expansion strong { color: var(--ink-soft); }
 
 /* ============================================================
    Scroll reveal
