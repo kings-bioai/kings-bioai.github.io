@@ -109,7 +109,7 @@
       name: "Yusuf Abdulle",
       role: "PhD Researcher",
       image: "img/yusuf.png",
-      research: "PhD research in statistical genetics and machine learning for ALS, working on methods for rare-variant analysis and polygenic risk modelling in motor neuron disease."
+      research: "I build machine-learning systems for rare and neurodegenerative disease, with a focus on Motor Neuron Disease (MND / ALS). The central problem I work on is that rare diseases are where prediction matters most, tasks such as early diagnosis, progression forecasting, subtype discovery, drug repurposing. My thesis is aiming to develop an end-to-end pipeline that fuses multimodal electronic health records, biomedical knowledge graphs, genomics to be able to execute on all the aforementioned downstream tasks."
     },
     indu: {
       name: "Indu Navar",
