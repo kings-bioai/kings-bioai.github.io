@@ -142,4 +142,10 @@ At the bottom of `team.html`, replace a placeholder figure with:
 
 Store images in **`img/social/`**.
 
-© 2025 King's BioAI Lab · King's College London
+## License
+
+Source code (HTML, CSS, JavaScript) is released under the MIT License — see [LICENSE.md](LICENSE.md).
+
+Photographs, logos, and written content are copyright of King's BioAI Lab, King's College London, all rights reserved, and are not covered by the MIT License.
+
+© 2026 King's BioAI Lab, King's College London
